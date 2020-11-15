@@ -141,4 +141,8 @@ router.delete('/user/me', auth, async(req,res)=>{
 })
 
 
+router.post('/test', async(req,res)=>{
+    res.send(req.body);
+})
+
 module.exports = router;
